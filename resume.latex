@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Abbas Raza
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+
+\usepackage[pdftex]{hyperref}
+
+% Define custom colors
+\definecolor{myBlue}{RGB}{0,0,255}
+\definecolor{myRed}{RGB}{255,0,0}
+\definecolor{myGreen}{RGB}{0,128,0}
+\definecolor{myPurple}{RGB}{128,0,128}
+\definecolor{myBrown}{RGB}{101, 67, 33}
+\definecolor{myMaroon}{RGB}{128,0,0}
+
+
+% Set hyperlink colors
+\hypersetup{
+  colorlinks=true,        % false: boxed links; true: colored links
+  linkcolor=myBlue,         % color of internal links
+  citecolor=blue,         % color of links to bibliography
+  filecolor=blue,         % color of file links
+  urlcolor=myBlue           % color of external links
+}
+
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting with colors
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large\color{myBlue}
+}{}{0em}{}[\color{myBlue}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+\textbf{\textcolor{myMaroon}{{\LARGE Abbas Raza}}}
+\end{center}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    {\faIcon{envelope}} \href{mailto:abbasraza1707@gmail.com}{abbasraza1707@gmail.com} & {\faIcon{linkedin}} 
+ \href{https://www.linkedin.com/in/abbasra/}{abbasra\space\space\space} \\ 
+ {\faIcon{phone}} +92 3336719372 & {\faIcon{github}}  \href{https://github.com/abbasraza}{abbasraza} \\
+\end{tabular*}
+
+%-----------Professional Summary-----------------
+\section{Professional Summary}
+A seasoned software engineer with over a decade of extensive experience in embedded systems spannig Linux user-space application development, Linux kernel porting, device driver development, build systems (YOCTO, OpenEmbedded, Mentor Embedded Linux), bootloaders, and network stack development across diverse platforms, including ARM, MIPS, PowerPC, and single/multi-core processors, as well as microcontrollers. This experience is complemented by my expertise in debugging, bug resolution, and performance optimization. Additionally, I possess versatile skills encompassing web development, database management, testing, scripting, and data analytics, enabling me to create comprehensive software solutions that address a broad spectrum of requirements. Adaptable and experienced in collaborating with colleagues from diverse backgrounds in both large multinational firms and smaller teams, whether in individual contributor or team lead roles.
+%--------AREAS OF EXPERTISE------------
+\section{Areas Of Expertise}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Specialist Skills}{Embedded Systems, Firmware, Bare-metal, Bootloader, OS, Kernel, Device Drivers, Network Stack, Userspace, Linux, Protocols, Performance Optimization, Testing, Debugging, ASM, C/C++, Scripting, Data Analysis, Web Development}
+	\resumeSubItem{Industry Expertise}{Networking Services, Automotive, Digital Lighting, Commercial Audio Equipment, Telemarketing }
+    \resumeSubItem{Languages, Frameworks \& Databases}{Assembly, C, C++, Objective-C, Go, JAVA, PHP, HTML/CSS, JavaScript, jQuery, Python(Django, Pandas, Dask), Bash, Lua, Perl, Expect, MySQL, CrateDB, MongoDB, Redis, Memcache}
+    \resumeSubItem{Tools \& Environment} {GNU tools (gcc, gdb, make), VSCode, crosstool-ng, QEMU, OVPsim, LTTng, LTP, CodeBench, Visual Studio, Eclipse IDE, BenchX, EDGE, RealView, Trace32, Oprofiler, Valgrind, gprof, Sysbench, Webbench, VMware, Virtual Box, Proteus, Keil, LABView, AVR Studio, RIDE, Xillinx, Electronics Workbench, Circuit Maker, Jcreator, XCode, JMeter, Selenium, PyCharm, Visual Studio Code, Android Studio, IntelliJ IDEA, kubectl, Git, SVN}
+    \resumeSubItem{CI/CD \& Cloud} {Git, AWS, OVH}
+    \resumeSubItem{Methodologies} {Agile, Scrum/Kanban}
+    \resumeSubItem{Architectures}{8051, ARM, MIPS, PowerPC, Intel}
+\resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+    {TEO International \href{www.teo-intl.com}{www.teo-intl.com}}{Islamabad, Pakistan}
+    {Lead Firmware Engineer }{January 2023 - }
+    \resumeItemListStart
+        \resumeItem{Commercial Audio Equipment}
+          {As the firmware lead, I've guided our embedded systems team through training and code reviews, resulting in improved project efficiency and fewer customer queries. Additionally, I've collaborated closely with our hardware team on custom hardware validation and low-level driver development.}
+        \resumeItem{Tech Stack}{Embedded Systems, Embedded Linux, Yocto, Linux Kernel, Device Drivers, Device Tree Overlays, C/C++, OOP, JTAG, JLink, systemd, MII/MDI/MDIO, Ethernet PHY, Marvel SW driver, GDB, IGMP/LLMNR/MDNS, I2C/SPI drivers, RS232/485, iMX6ULL, Cortex-M4, uTasker OS, Jenkins, Meson/Ninja, Gitflow, FreeRTOS, AWS IOT}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Outright LLC}{Islamabad, Pakistan}
+    {Lead Software Developer }{September 2022 - December 2022}
+    \resumeItemListStart
+        \resumeItem{CRM}
+          {Automated sales reporting using Ringba APIs, reduced reporting time by 75\% and improved accuracy by developing an automated data export and mapping process, syncing CSR leads.}
+          \resumeItem{Data Management}
+          {Optimized management of large-scale consumer data, processed and stored billions of records by implementing efficient data processing techniques.}
+        \resumeItem{Tech Stack}{Linux, Python, Redis, HTML, CSS, PHP, JavaScript, MySQL, MongoDB, Django, Pandas, Dask, APIs,
+	Selenium, Google Analytics}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Tridonic GmbH \& Co KG \href{www.tridonic.com}{www.tridonic.com}}{Australia, Remote}
+    {Software Developer}{November 2017 – October 2020}
+    \resumeItemListStart
+        \resumeItem{ConnecDIM New Infrastructure Project}
+          {Data migration, functional and automated testing, bug fixes, and load \& performance tuning in migrating ConnecDIM to Kubernetes. Cut infrastructure costs significantly through cloud component migration. Designed traffic generators, addressing out-of-order data issues due to load balancing, and crafted a custom toolchain for armv5 gateway using crosstool-ng.}
+        \resumeItem{ConnecDIM Performance Improvement Project}{Achieved a remarkable 20x page load speed enhancement and MySQL-to-NoSQL transition. Directed query simulation, optimizing response times, and orchestrated successful cloud migration. This aligns with my broader role in driving performance and cost improvements. My versatile expertise has earned comparisons to a Swiss Army knife, seamlessly bridging team gaps and mastering new domains.}
+        \resumeItem{Tech Stack}{CrateDB, MySQL, Memcache, Python, JMeter, Performance testing, Load testing, PHP, JavaScript, HTML/CSS, jQuery, ntp, kubectl, JAVA, C/C++/Objective-C, Docker, Kubernetes, load balancing, proxy, apache, redis, etcd, Go programming, autoscaler, crosstool-ng, lldb, grafana}
+      \resumeItemListEnd
+
+    \resumeSubheading
+		{Tridonic Australia \href{www.tridonic.com}{www.tridonic.com}}{Sydney}
+		{Software Developer}{September 2015 – July 2017}
+		\resumeItemListStart
+        \resumeItem{ConnecDIM - Smart Lighting Management Solution}{Played a pivotal role as a firmware developer, addressing complex bugs, crafting a resilient cloud back-end, and bolstering overall performance. Notably, I excelled in pinpointing and remedying challenging bugs, enhancing firmware stability through critical fixes, mitigating memory leaks in intricate server code, and establishing an efficient automated testing framework. Collectively, these accomplishments markedly amplified gateway reliability, streamlined processes through automation, and significantly contributed to the triumph of the connecDIM smart lighting management solution.}
+          \resumeItem{Tech Stack}{Digital Addressable Lighting Interface (DALI) protocol, LED, Emergency, Color, Smart Sensor modules, Valgrind, MySQL, C, Objective-C, OS X, Linux user-space multi-threaded programming, Xcode, Code coverage, gdb, GitLab Continuous Integration}
+		\resumeItemListEnd
+
+    \resumeSubheading
+    {Mentor Graphics \href{www.mentor.com}{www.mentor.com}}{Lahore, Pakistan}
+    {Senior Software Development Engineer}{March 2011 – May 2015}
+    \resumeItemListStart
+    \resumeItem{Linux Kernel and Drivers Optimisation}{Optimized the Linux kernel and drivers for Freescale's ARM iMX6 platforms, addressing critical bugs during on-site work at Bosch in Germany. I became a recognized expert in the USB subsystem, enhancing the imx6 chipidea USB driver and contributing a patch to the Linux kernel. My improvements reduced processor bring-up time, optimized boot times, and integrated missing features. I also resolved eMMC DDR mode issues, fixed MMC support for the imx6q sabrelite board in U-Boot, and added features to the Ethernet driver. I was among the top three contributors in a globally distributed team, highlighting the impact of my work}
+\resumeItem{MEIBP (Mentor Embedded IVI BASE PLATFORM) Project}{Focused on in-vehicle infotainment solutions at Mentor Graphics. I integrated an Intel Tunnel Creek board's Linux BSP into MEIBP, incorporating XIP file system, Virtual Input Device, and Linux Containers LXC support. I effectively addressed diverse bugs within user-space applications.}
+\resumeItem{MEL (Mentor Embedded Linux) Project}{Development of Mentor Embedded Linux based on OpenEmbedded within a Scrum-based Agile team. My accomplishments included integrating Linux BSPs for ARM-based DM37xx and MIPS-based Malta target boards, incorporating wifi and Bluetooth support into BSPs, and worked on the MIPS Malta board support in U-Boot. I also played a pivotal role in enhancing user-space trace clock support in the LTTng Trace Toolkit for the powerpc architecture. My submitted patch, accepted within the LTTng community, facilitated synchronization between user-space and kernel LTTng traces.}
+\resumeItem{Tech Stack} {PowerPC, ARM, MIPS development boards, kernel, uboot development and 				debugging, OpenEmbedded CodeSourcery toolchains for Linux, Qemu, OVPsim, LTTng, LTP, I/O testing, 	udev, directfb, systemd, pulseaudio, gstreamer. JIRA, git, svn.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {4M Wireless Ltd \href{www.u-blox.com}{www.u-blox.com}}{Lahore, Pakistan}
+    {Embedded Software Engineer}{July 2010 - December 2010}
+    \resumeItemListStart
+        \resumeItem{TCP/IP Overhead}
+          {Developed USB Raw communication driver for linux and replaced Ethernet channel by USB channel in LTE framework. Data rates were improved and TCP/IP overhead was confirmed.}
+        \resumeItem{Tech Stack}{ARM based development (porting, kernel building using ltib), cmake, IDE, USB, RTOS, RedBoot, U-boot. 	ARM11 development boards (Freescale iMX31 pdk, iMX31 lite-kit, iMX35 pdk)}
+      \resumeItemListEnd
+   
+    \resumeSubheading
+    {CoreZee Pvt Ltd \href{www.corezee.com}{www.corezee.com}}{Karachi, Pakistan}
+    {Software Engineer}{September 2008 – July 2010}
+    \resumeItemListStart
+        \resumeItem{IPsecure-Octeon} {In the development of IKE/IPsec stacks for the Octeon processor, integrated Racoon2 as the core IKE protocol stack and built the IPsec stack from scratch. This involved enhancing Racoon2, implementing security association and policy management engines, optimizing performance, and doubling tunnel connection speed.}
+        \resumeItem{Tech Stack}{Linux user-space, multi-core development for embedded network processor Octeon, cross compilation, 	debugging(gdb), GNU tools, Makefiles, scripting (bash, python, expect, perl), C programming, IPC, multi-threading, network protocol stacks, routers, packaging, testing.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {University of Engineering and Technology}{Lahore, Pakistan}
+    {Bachelor of Science in Electronics \& Communication Engineering}{2004-2008}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Academic Projects}
+\begin{description}[font=$\bullet$]
+\item {Design and implementation of starvation free CAN using Dynamic Priority    
+   Based Arbitration Mechanism.} 
+\item {Interfaced MMC/SD card with AVR microcontroller with FAT32 file-system.}
+\item {Internet and GSM based Industrial Data Acquisition, Control and Logging      
+   System over RS485 support}
+   \item {Animation Player with microcontroller and KS0108 controller based Graphical}
+\end{description}
+
+\begin{center}
+\textbf{\textcolor{myMaroon}{{REFERENCES AVAILABLE UPON REQUEST}}}
+\end{center}
+
+%-------------------------------------------
+\end{document}
